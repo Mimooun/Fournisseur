@@ -1,0 +1,68 @@
+.owlprod{
+    width: 100%;
+    height: 80vh;
+    margin-top: 100px;
+    position: relative;
+    background-image: url('../assets/images/features.jpg');
+    background-attachment: fixed;
+}
+.owlprod .overlay{
+    width: 100%;
+    height : 100% ;
+    background-color:#11333ab2;
+}
+.owlprod .overlay .container .contenu-img {
+    padding : 25px ;
+}
+.owlprod .container .contenu-img img{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 150px;
+    padding : 10px ;
+    border-radius: 20px;
+}
+.owlprod .container .contenu-img img{
+    height: 100%;
+    padding : 10px ;
+}
+.owlprod .container .contenu-img .domaine{
+    font-family: "Hind", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*responsive mobile */
+
+@media(max-width: 976px){
+    .owlprod{
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        background-image: url('../assets/images/features.jpg');
+        background-attachment: fixed;
+    }
+    
+}
+/* responsive tablet */
+
+@media (max-width : 1024px) {
+    .owlprod .overlay {
+        width: 100vw;
+    }
+    .owlprod .overlay .container {
+        display: flex;
+        flex-direction: row;
+        padding : 10px ;
+    }
+
+    .owlprod .overlay .container .contenu-img {
+        padding: 15px;
+    }
+}

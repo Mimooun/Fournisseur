@@ -1,0 +1,90 @@
+.chose .tit{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    font-family: "IBM Plex Sans",sans-serif;
+    margin-top: 30px;
+}
+.chose .title{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    font-family: "IBM Plex Sans",sans-serif;
+}
+.chose .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.chose .card .img img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    background-color: #3ECFA3;
+    padding: 18px 15px;
+    width: 42%;
+    border-radius: 10px;
+
+}
+.chose .card:hover img {
+    background-color: #3ef5a3;
+    cursor: pointer;
+}
+.chose .card .img img{
+    width : 85px ;
+}
+
+.chose .cards .card{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px ;
+    border-radius: 5px;
+    padding: 20px 40px;
+    gap : 15px 
+}
+.chose .cards .card .text .title{
+    font-size: 16px;
+    color: black;
+
+}
+.chose .cards .card .text .txt {
+    font-size: 13px;
+}
+
+/*responsive  mobile */
+@media (max-width: 967px) {
+    .chose .tit{
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        color: #000;
+        font-family: "IBM Plex Sans",sans-serif;
+        margin-top: 20px;
+    }
+    .chose .cards{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+    .title{
+        padding: 0px;
+    }
+  }
+
+  /* responsive tablet */ 
+
+  @media (max-width : 1024px) {
+      .chose  .cards {
+          width : 100% ;
+          margin-left : 0;
+          padding : 0
+      }
+  }
