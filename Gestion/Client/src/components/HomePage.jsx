@@ -21,7 +21,6 @@ function HomePage() {
       <Owlprod />
       <Chose />
       <Experience />
-      <Pipeline />
       <Testimonial />
       <Contact />
       <Footer />

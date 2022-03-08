@@ -1,66 +1,102 @@
-.login-form {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px;
-  width: 400px;
-  height: 400px;
-  padding: 15px;
-  margin: auto;
-  margin-top: 150px;
-  border-radius: 10px;
-  background: linear-gradient(
-    0deg,
-    rgba(45, 253, 172, 1) 0%,
-    rgba(231, 235, 234, 0.010241596638655426) 100%
-  );
-}
-.login-form .title {
-  display: block;
-  margin: auto;
-}
-.login-form .title img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-.login-form .inputs {
+.signUp {
+  background: linear-gradient(#00487E, #2a83c7);
+  width: 100%;
+  height: 100vh;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-}
-.login-form .inputs input {
-  padding: 15px;
-  margin-top: 30px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: #737473;
-  border-radius: 7px;
-  border: none;
-}
-.login-form .btn {
-  display: block;
-  position: relative;
-  margin: auto;
-  padding: 7px;
-  transition: ease-in-out 0.8s;
-}
-.login-form .btn button {
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  width: 100px;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  background-color: #fdfdfd;
-  
+  color: #222222;
 }
 
-.login-form .btn button:hover{
-  color: rgba(45, 253, 172, 1);
+.signUp .container__form {
+  position: relative;
+  background-color: white;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 26vw;
+  min-width: 320px;
+  min-height: 70vh;
+  overflow: hidden;
+}
+
+.signUp .container__form .MuiAlert-standardError {
+  display: none;
+  margin-bottom: 50px;
+  width: 90%;
+  z-index: 9;
+}
+
+.signUp .container__form .MuiAlert-standardError.active {
+  display: flex;
+}
+
+.signUp .container__form .icon-container {
+  position: relative;
+  width: 20%;
+  padding-bottom: 20%;
+  background: linear-gradient(#00487E, #2a83c7);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUp .container__form .icon-container img {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signUp .container__form h1 {
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.signUp .container__form .inputs {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signUp .container__form p {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  align-self: flex-end;
   cursor: pointer;
-  border : 3px solid rgba(45, 253, 172, 1);
+}
+
+.signUp .container__form .btn {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.signUp .container__form .MuiFormLabel-root,
+.signUp .container__form .MuiInputBase-root {
+  font-size: 14px !important;
+}
+
+.signUp .container__form .MuiButton-contained {
+  background-color: #00487E !important;
+  color: white !important;
+}
+
+@media(max-width:400px) {
+  .signUp .container__form {
+      width: 80%;
+      min-width: 80%;
+  }
 }
